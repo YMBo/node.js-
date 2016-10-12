@@ -37,3 +37,8 @@ function getType(extname){
 	}
 }    
 ```
+**用到的模块**    
+  `1.http模块(用来创建服务器)`
+  `2.url模块()`
+  `3.fs模块()`
+  `4.path模块()`
