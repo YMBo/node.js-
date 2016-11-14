@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>小小相册</title>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+</head>
+<body>
+	<ul class="head">
+		<li style='color: black;'>
+			<a class="all" href='/' >全部相册</a>
+			<span style='color: black;font-weight:bold;'>/</span>
+			<span style='color: black;'><%=wj%></span>
+		</li>
+	</ul>
+	<div class="box">
+		<ul>
+			<% for(var i=0;i<srcs.length;i++){ %>
+			<li><img src="<%=srcs[i] %>" alt="">
+			<h4 style="color:black"><%=srcs[i] %></h4>
+			</li>
+			<% } %>
+		</ul>
+	</div>
+</body>
+</html>

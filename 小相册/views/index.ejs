@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小小相册</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body style="background:url('images/bg.jpg') no-repeat;background-size:cover;">
+	<ul class="head">
+		<li class="in">全部相册</li>
+	</ul>
+	<div class="box">
+		<ul>
+			<% for(var i=0;i<names.length;i++){ %>
+			<li><a href="<%= names[i]%>"><img src="images/文件夹.png" alt=""></a>
+			<h4><%= names[i]%></h4>
+			</li>
+			<% } %>
+		</ul>
+	</div>
+</body>
+</html>
